@@ -1,4 +1,4 @@
-import {toCel} from "./utils/fomatTemp.js";
+import {toCel} from "./fomatTemp.js";
 
 let cityName;
 let isClicked= true;
