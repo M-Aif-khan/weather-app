@@ -1,0 +1,148 @@
+body{
+    background-color: rgb(52, 58, 70);
+    padding: 0px;
+    /* padding: 0; */
+    margin: 0; 
+}
+.main-weather-data{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    background-color: black;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.current-weather{
+ 
+    width: fit-content;
+    padding:50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px lightblue;
+    background-color: rgb(52, 57, 60);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.input-city-name{
+    border-radius: 10px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.Search-button{
+    border-radius: 10px;
+    height: 43px;
+    cursor: pointer;
+    width: 70px;
+    background-color: green;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;    
+    border: none;
+    transition: opacity 0.25s;
+    padding: 10px;
+
+}
+.Search-button:active{
+    opacity: 0.7;
+}
+
+/*-------------------------------------------------------*/
+/* future section css */
+
+.future-main{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+.future{
+    /* border: 2px solid white; */
+    width: 300px;
+    
+    
+    
+}
+.future-heading{
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.day-data{
+    /* border: 2px solid green; */
+    margin-top: 20px;
+    color: white;
+    width: fit-content;
+
+    background-color: rgb(52, 57, 60);
+    border: 3px solid black;
+    border-radius:7px ;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+
+}
+
+@media (max-width: 480px) {
+    .main-weather-data {
+        flex-direction: column; /* Stack the input and button vertically */
+        align-items: center;   /* Center align the content */
+    }
+
+    .input-city-name {
+        width: 90%; /* Make the input take most of the width */
+        margin-bottom: 10px; /* Add spacing between input and button */
+    }
+
+    .Search-button {
+        width:300px; /* Make the button take most of the width */
+        height: 40px; /* Adjust height slightly for smaller screens */
+    }
+    
+}
+
+@media (max-width:403) {
+    .Search-button {
+        width:230px; /* Make the button take most of the width */
+        height: 40px; /* Adjust height slightly for smaller screens */
+    }
+
+}
+.future-heading{
+    font-size: 35px;
+}
+
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar (for horizontal scroll) */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #2c2f33; /* Background color of the track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #7289da; /* Color of the thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 3px solid #2c2f33; /* Add some space around the thumb */
+}
+
+/* Style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5b6eae; /* Change color when hovered */
+}
+
+/* Style the scrollbar corners (for two-axis scrolling) */
+::-webkit-scrollbar-corner {
+    background: #2c2f33; /* Background color of the corner */
+}
+
